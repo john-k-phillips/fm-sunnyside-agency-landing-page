@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <script src="./app.js"></script>
   <link rel="stylesheet" href="styles/styles.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
@@ -13,11 +14,24 @@
   <header id="header">
     <nav class="main-nav">
       <ul class="list-items">
-        <li><img src="./images/logo.svg" alt="sunnyside"></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><button class="nav-button" href="#contact">Contact</button></li>
+        <li class="nav-logo">
+          <img src="./images/logo.svg" alt="sunnyside">
+        </li>
+        <div class="dropdown-items">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><button class="nav-button" href="#contact">Contact</button></li>
+        </div>
+        <li class="hamburger">
+          <img 
+            tabindex="0"
+            onkeypress="toggleMenu()"
+            onclick="toggleMenu()"
+            role="menuitem" 
+            aria-label="hamburger" 
+            src="./images/icon-hamburger.svg" alt="toggle menu">
+        </li>
       </ul>
     </nav>
     <h1>
