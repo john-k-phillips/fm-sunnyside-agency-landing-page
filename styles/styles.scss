@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+@import './imports';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: $font-barlow;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    font-family: $font-fraunces;
+}
+
+h1, h2, h3 {
+    font-family: $font-fraunces;
+}
