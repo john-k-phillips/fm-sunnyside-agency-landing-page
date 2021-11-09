@@ -51,12 +51,13 @@ h1, h2, h3 {
         color: $clr-dark-grayish-blue;
     }
     .main-btn {
-        position: relative;
-
+        position: relative;        
         margin: 2em;
         margin-bottom: 3em;
 
         font-size: 1em;
+
+        cursor: pointer;
         &::after {
             content: '';
 
@@ -75,4 +76,12 @@ h1, h2, h3 {
             z-index: -1;
         }
     }
+
+    .stand-out-btn {
+        &::after {
+            background-color: $clr-red;
+        }
+    }
+    
 }
+

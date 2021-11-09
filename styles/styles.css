@@ -203,6 +203,76 @@
   background-position: center;
 }
 
+@media screen and (min-width: 1024px) {
+  #main {
+    width: 100%;
+  }
+  #transform, #stand-out {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #transform .section-content, #stand-out .section-content {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    text-align: left;
+  }
+  #transform .section-content h2, #transform .section-content p, #transform .section-content button, #stand-out .section-content h2, #stand-out .section-content p, #stand-out .section-content button {
+    margin: 0;
+    padding: 0;
+  }
+  #transform .section-content h2, #stand-out .section-content h2 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    justify-self: flex-start;
+    max-width: 50%;
+    margin-left: 3em;
+  }
+  #transform .section-content p, #stand-out .section-content p {
+    justify-self: flex-start;
+    margin-left: 6em;
+    max-width: 75%;
+    font-size: 0.9em;
+  }
+  #transform .section-content button, #stand-out .section-content button {
+    margin-left: 5.5em;
+    padding: 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    justify-self: flex-start;
+  }
+  .section-content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.9em;
+    margin: 0;
+  }
+  #stand-out {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .section-image-container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    height: 420px;
+  }
+}
+
 #client-testimonials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -386,5 +456,9 @@ h1, h2, h3 {
   border-radius: 2em;
   opacity: 0.3;
   z-index: -1;
+}
+
+.section-content .stand-out-btn::after {
+  background-color: red;
 }
 /*# sourceMappingURL=styles.css.map */
