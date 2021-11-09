@@ -204,6 +204,25 @@
 }
 
 @media screen and (min-width: 1024px) {
+  #photography {
+    background: url("../images/desktop/image-photography.jpg");
+    background-position: center;
+  }
+  #graphic-design {
+    background: url("../images/desktop/image-graphic-design.jpg");
+    background-position: center;
+  }
+  .single-section-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .single-section {
+    width: 100%;
+  }
+  .single-section p {
+    max-width: 75%;
+  }
   #main {
     width: 100%;
   }
@@ -360,6 +379,7 @@
 
 #footer-content .footer-logo img {
   width: 50%;
+  max-width: 400px;
 }
 
 .link-list, .content-list {
@@ -377,6 +397,10 @@
   color: #458c7e;
 }
 
+.link-list a:hover, .content-list a:hover {
+  color: white;
+}
+
 .link-list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -384,6 +408,13 @@
   gap: 1.5em;
   margin-top: 4em;
   margin-bottom: 2em;
+}
+
+@media screen and (min-width: 1024px) {
+  #gallary {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 * {
@@ -443,6 +474,7 @@ h1, h2, h3 {
   margin: 2em;
   margin-bottom: 3em;
   font-size: 1em;
+  cursor: pointer;
 }
 
 .section-content .main-btn::after {
@@ -459,6 +491,6 @@ h1, h2, h3 {
 }
 
 .section-content .stand-out-btn::after {
-  background-color: red;
+  background-color: #fe7867;
 }
 /*# sourceMappingURL=styles.css.map */

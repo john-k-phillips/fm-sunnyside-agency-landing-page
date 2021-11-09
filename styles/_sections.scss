@@ -52,6 +52,27 @@
 }
 
 @media screen and (min-width: 1024px) {
+
+    #photography {
+        background: url('../images/desktop/image-photography.jpg');
+        background-position: center;
+    }
+    #graphic-design {
+        background: url('../images/desktop/image-graphic-design.jpg');
+        background-position: center;
+    }
+    
+    .single-section-flex {
+        display: flex;
+    }
+
+    .single-section {
+        width: 100%;
+        p {
+            max-width: 75%;
+        }
+    }
+
     #main {
         width: 100%;
     }
