@@ -1,0 +1,42 @@
+#client-testimonials {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h3 {
+        font-size: 0.8em;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        color: $clr-dark-grayish-blue;
+        margin: 4em 0em;
+    }
+}
+
+.client-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5em;
+    img {
+        width: 72px;
+        border-radius: 50%;
+        margin-bottom: 1em;
+    }
+    .client-comment {
+        max-width: 85%;
+        color: $clr-very-dark-grayish-blue;
+        line-height: 1.5em;
+    }
+    h4 {
+        font-family: $font-fraunces;
+        font-weight: 900;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+    }
+    .client-role { 
+        color: $clr-grayish-blue;
+        font-size: 0.8em;
+    }
+}

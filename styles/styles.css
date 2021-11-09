@@ -152,6 +152,68 @@
   background-position: center;
 }
 
+#client-testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#client-testimonials h3 {
+  font-size: 0.8em;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: #818498;
+  margin: 4em 0em;
+}
+
+.client-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.client-container img {
+  width: 72px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.client-container .client-comment {
+  max-width: 85%;
+  color: #5a636c;
+  line-height: 1.5em;
+}
+
+.client-container h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.client-container .client-role {
+  color: #a7abae;
+  font-size: 0.8em;
+}
+
 * {
   margin: 0;
   padding: 0;
